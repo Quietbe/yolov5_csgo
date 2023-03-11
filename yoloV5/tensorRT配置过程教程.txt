@@ -1,0 +1,22 @@
+【yolov5 6.1官方模板TensorRT加速保姆级图文教程】
+https://blog.csdn.net/lao_5/article/details/127813970?spm=1001.2014.3001.5502
+
+#最简单的方法如下：
+conda create -n yoloTRT python=3.8    #创建环境
+conda activate yoloTRT    #激活环境
+cd D:\yolov5-6.1  #进入程序文件夹
+pip install --upgrade setuptools pip wheel  #这里报错,不影响。next。。。
+python -m pip install nvidia-pyindex
+python -m pip install nvidia-cuda-runtime-cu11
+conda install cuda -c nvidia/label/cuda-11.7.0 -c nvidia/label/cuda-11.7
+conda install pytorch torchvision torchaudio cudatoolkit=11                             #-c pytorch
+pip install tensorrt-8.4.0.6-cp38-none-win_amd64.whl
+pip install onnx
+pip install -r requirements.txt
+conda deactivate  #退出虚拟环境
+
+
+activate yoloTRT
+D:
+cd D:\Py_Project\yoloV5\aim-csgo
+python main.py

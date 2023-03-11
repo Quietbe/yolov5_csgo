@@ -1,0 +1,10 @@
+//在文件夾内地址欄輸入cmd，然後鍵入以下對應代碼
+//轉換器不能獨立運行，丟進群文件AI成品裏面
+
+
+//轉換4個標簽的，圖片640 ,n權重
+4labs -s your.wts your.engine n
+
+
+//轉換2個標簽的，圖片640 ,s權重
+2labs -s your.wts your.engine s
